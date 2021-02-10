@@ -1,0 +1,470 @@
+* {
+    outline: 1px solid orange;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Verdana, sans-serif;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.container {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.site-header {
+  color: #ffffff;
+
+  background-color: #222222;
+}
+
+.site-header .container {
+  min-height: 400px;
+  padding-top: 50px;
+  padding-bottom: 180px;
+
+  background-image: url("../img/moon-rocket.png");
+  background-repeat: no-repeat;
+  background-position: 520px 130px;
+}
+
+.main-nav {
+  display: flex;
+  margin-bottom: 95px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 60px;
+}
+
+.site-menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 660px;
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-menu a {
+  display: block;
+  margin-right: 40px;
+
+  font-size: 14px;
+  text-decoration: none;
+  color: #d4d4d4;
+}
+
+
+.site-menu a:hover {
+  color: white;
+}
+
+.site-menu a:active {
+  color: #ccc;
+}
+
+
+.contacts-menu {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 180px;
+  margin: 0;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: 80px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.contacts-menu li {
+  margin-left: 20px;
+}
+
+
+.contacts-menu a:hover {
+  opacity: 0.8;
+}
+
+.contacts-menu a:active {
+  opacity: 0.4;
+}
+
+
+.contacts-menu .icon {
+  display: block;
+  width: 17px;
+  height: 17px;
+}
+
+.contacts-menu .icon-mail {
+  background-image: url(../img/mail-icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.contacts-menu .icon-phone {
+  background-image: url(../img/phone-icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.about-us {
+  width: 300px;
+  padding-left: 120px;
+}
+
+.about-us h1 {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  font-size: 45px;
+  line-height: 50px;
+  font-family: "Courier New", monospace;
+  color: white;
+}
+
+.about-us p {
+  margin: 0;
+  margin-bottom: 50px;
+  padding-left: 5px;
+
+  font-size: 14px;
+  line-height: 22px;
+  color: #d4d4d4;
+}
+
+.btn {
+  position: relative;
+
+  display: inline-block;
+  width: 195px;
+  padding: 0 25px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: top;
+  color: #222222;
+
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+}
+
+
+.btn::after {
+  content: "";
+
+  position: absolute;
+  right: 20px;
+  top: 17px;
+
+  width: 19px;
+  height: 16px;
+
+  background-image: url(../img/right-arrow-dark.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+.btn-yellow {
+  background-color: #feca30;
+}
+
+
+.btn-yellow:hover {
+  background-color: white;
+}
+
+.btn-yellow:active {
+  background-color: #c1a300;
+}
+
+
+.btn-grey {
+  width: 215px;
+
+  color: white;
+
+  background-color: #222222;
+
+}
+
+
+.btn-grey::after {
+  background-image: url(../img/right-arrow-white.png);
+}
+
+.btn-grey:hover {
+  background-color: #676767;
+}
+
+.btn-grey:active {
+  background-color: #ccc;
+}
+
+
+.features {
+  padding: 85px 0;
+
+  background-color: #131313;
+
+  color: #ffffff;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features-list li {
+  position: relative;
+
+  width: 180px;
+  margin-right: 80px;
+  padding-top: 100px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #d4d4d4;
+}
+
+
+.features-list li::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 60px;
+  height: 68px;
+}
+
+.feature-made-in-russia::after {
+  background-image: url(../img/advantage-icon-1.png);
+}
+
+.feature-food::after {
+  background-image: url(../img/advantage-icon-2.png);
+}
+
+.feature-pilots::after {
+  background-image: url(../img/advantage-icon-3.png);
+}
+
+.feature-moon-rover::after {
+  background-image: url(../img/advantage-icon-4.png);
+}
+
+
+.columns-container {
+  display: flex;
+}
+
+.columns-container .left-column {
+  width: 440px;
+  margin-right: 80px;
+}
+
+.columns-container .right-column {
+  width: 440px;
+}
+
+.moon-vacation {
+  padding-top: 80px;
+  padding-bottom: 45px;
+}
+
+.moon-vacation .lead {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Courier New", monospace;
+}
+
+.recommendations {
+  padding-top: 20px;
+  padding-bottom: 55px;
+}
+
+.recommendations h3 {
+  margin-top: 0;
+  margin-bottom: 35px;
+  
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Courier New", monospace;
+}
+
+.recommendations-list {
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+
+  list-style: none;
+}
+
+.recommendations-list li {
+  position: relative;
+
+  margin-bottom: 20px;
+}
+
+
+.recommendations-list li::before {
+  content: "";
+
+  position: absolute;
+  left: -25px;
+  top: 5px;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+  background-color: #feca30;
+}
+
+
+.site-footer {
+  padding-top: 50px;
+  padding-bottom: 80px;
+
+
+  color: #ffffff;
+
+  background-color: #131313;
+
+}
+
+
+.footer-columns-container {
+  display: flex;
+}
+
+.footer-columns-container .left-column {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  margin-right: 100px;
+}
+
+.footer-columns-container .right-column {
+  width: 720px;
+  padding-top: 35px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.logo-container .logo {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.logo-container p {
+ font-size: 14px;
+}
+
+.copyrights {
+  margin-top: auto;
+
+
+  color: #555555;
+
+}
+
+.footer-menu {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-menu > li {
+  width: 180px;
+  margin-right: 60px;
+}
+
+.footer-submenu-title {
+  display: block;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+
+
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border-bottom: 1px solid #555555;
+
+}
+
+.footer-submenu {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-submenu > li {
+  margin-bottom: 20px;
+}
+
+.footer-submenu a {
+  text-decoration: none;
+ color: #888888;
+}
+    .footer-nav a:hover {
+      color: white;
+    }
+
+    .footer-nav a:active {
+      color: #ccc;
+    }
